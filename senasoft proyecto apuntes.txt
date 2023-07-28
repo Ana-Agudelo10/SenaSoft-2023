@@ -1,0 +1,34 @@
+CREATE TABLE usuario(idusuario VARCHAR(2) PRIMARY KEY,
+                    nombre VARCHAR (20));
+                    
+CREATE TABLE cartas(idcarta VARCHAR(2) PRIMARY KEY NOT NULL,
+                   nombre VARCHAR(20),
+                   poder INT(4),
+                   experiencia INT (4),
+                   defensa INT (4));
+                   
+CREATE TABLE paquetes (idpaquete VARCHAR(2) PRIMARY KEY,
+                      numcartas INT(2),
+                       idcarta VARCHAR(2),
+                       idusuario VARCHAR(2),
+                       CONSTRAINT id_usuario_FK FOREIGN KEY (idusuario) REFERENCES usuario(idusuario) ON UPDATE CASCADE ON DELETE CASCADE,
+                      CONSTRAINT id_carta_FK FOREIGN KEY (idcarta) REFERENCES cartas(idcarta) ON UPDATE CASCADE ON DELETE CASCADE);
+
+INSERT INTO usuario VALUES ('1','Carol Yate');
+INSERT INTO usuario VALUES ('2','Lida Corrales');
+
+INSERT INTO cartas VALUES ('1A','Cristiano Ronaldo', 100, 95, 60);
+INSERT INTO cartas VALUES ('2A','Khun Aguero', 93, 88, 34);
+INSERT INTO cartas VALUES ('3A','Kylian Mbappe', 95, 31, 39);
+INSERT INTO cartas VALUES ('4A','Federico Valverde', 87, 78, 84);
+INSERT INTO cartas VALUES ('5A','Ousmane Dembele', 82, 76, 44);
+INSERT INTO cartas VALUES ('6A','Neymar Jr', 94, 85, 38);
+INSERT INTO cartas VALUES ('7A','Karim Benzema', 91, 88, 40);
+
+INSERT INTO cartas VALUES ('1B','Cristiano Ronaldo', 92, 45, 70);
+INSERT INTO cartas VALUES ('2B','Khun Aguero', 91, 78, 56);
+INSERT INTO cartas VALUES ('3B','Kylian Mbappe', 23, 45, 78);
+INSERT INTO cartas VALUES ('4B','Federico Valverde', 78, 97, 67);
+INSERT INTO cartas VALUES ('5B','Ousmane Dembele', 34, 65, 63);
+INSERT INTO cartas VALUES ('6B','Neymar Jr', 88, 55, 75);
+INSERT INTO cartas VALUES ('7B','Karim Benzema', 89, 12, 34);
