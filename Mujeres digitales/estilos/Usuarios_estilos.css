@@ -1,0 +1,15 @@
+*{padding: 0;
+margin: 0;}
+header {
+    background-color: rgb(92, 144, 221);
+    padding: 18px;
+    height: 100%;
+    width: 100%;
+}
+.caja1{
+    display: flex;
+    float: left;
+    width: 30%;
+    height: 30%;
+    background-color: aquamarine;
+}

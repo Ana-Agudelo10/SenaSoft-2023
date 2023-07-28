@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: rgb(92, 144, 221);
+    padding: 18px;
+    height: 100%;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    color: black;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul li a{
+
+    text-decoration: none;
+    color: black;
+    flex-direction: row;
+}
