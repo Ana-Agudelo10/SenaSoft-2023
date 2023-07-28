@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(https://i.ytimg.com/vi/m70CK5t4MYE/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  .contenido {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffffa1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+  }
+  
+  .form-basico {
+    text-align: left;
+  }
+  
+  .titulo {
+    margin-bottom: 15px;
+  }
+  
+  .entrada {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  
+  
+  .boton-radio {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  .boton {
+    text-align: center;
+  }
+  
+  input[type="button"] {
+    padding: 20px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+  }
+  
+
+  .menu ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu ul li {
+    padding-top: 15px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu ul li a.activo {
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 742px) {
+    .contenido {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+  }

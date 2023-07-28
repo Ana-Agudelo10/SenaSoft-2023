@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas básicas</title>
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CARTAS</h1>
+    </header>
+
+    <div class="contenido">
+        <img src="img/usuario.png" alt="img-form">
+        <p id="nombre-jugador">Nombre jugador</p>
+    </div>
+    <div class="cartas1">
+        <img src="img/cris_carta.png" alt="cartas1-img">
+        <img src="img/cris_carta.png" alt="cartas2-img">
+        <img src="img/cris_carta.png" alt="cartas3-img">
+        <img src="img/cris_carta.png" alt="cartas4-img">
+        
+        <p id="num-car"> escoja 4 cartas</p>
+    </div>
+    
+
+    </div>
+
+    <footer>
+        <div class="menu">
+            <ul>
+                <li><a href="partida.html">Iniciar</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const NOMBRE_JUGADOR1 = localStorage.getItem("nombreJugador");
+        
+        const nombreParrafo = document.getElementById("nombre-jugador");
+        nombreParrafo.textContent = NOMBRE_JUGADOR1;
+    
+    </script>
+</body>
+
+</html>

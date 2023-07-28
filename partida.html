@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas básicas</title>
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Partida iniciada</h1>
+    </header>
+
+    <div class="contenido">
+        <img src="img/usuario.png" alt="img-form">
+        <p id="nombre-jugador">Nombre jugador</p>
+    </div>
+    <div class="cartas1">
+        <img src="img/poker_2273503.png" alt="cartas1-img">
+        <p id="num-car"> 6 cartas</p>
+    </div>
+    <div class="contenido2">
+        <img src="img/usuario.png" alt="img-form">
+        <p id="nombre-jugador2">Nombre jugador:</p>
+    </div>
+    <div class="cartas2">
+        <img src="img/poker_2273503.png" alt="cartas2-img">
+        <p id="num-car">4 cartas</p>
+
+    </div>
+
+    <footer>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Abandonar partida</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const NOMBRE_JUGADOR1 = localStorage.getItem("nombreJugador");
+        const NOMBRE_JUGADOR2 = "LIDA"; // Nombre random
+
+        const nombreParrafo = document.getElementById("nombre-jugador");
+        const nombreParrafo2 = document.getElementById("nombre-jugador2");
+
+        nombreParrafo.textContent = NOMBRE_JUGADOR1;
+        nombreParrafo2.textContent = NOMBRE_JUGADOR2;
+    </script>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-futbol-degradado-dinamico_23-2149007789.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  header {
+    text-align: center;
+    padding: 25px;
+    font-family: Arial,sans-serif;
+    background-color: #1b76ddec;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  .contenido,
+  .contenido2 {
+    max-width: 500px;
+    margin: 80px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .contenido{
+    float: left;
+  }
+  .contenido2 {
+    float: right;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto 30px; /* Centramos la imagen horizontalmente */
+    max-width: 90%;
+    height: auto;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center; /* Centramos el texto dentro de los párrafos */
+  }
+  
+  footer {
+    text-align: center;
+    background-color: rgba(106, 106, 116, 0.863);
+    padding: 10px 0;
+    color: #fff;
+  }
+  
+  .menu {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los enlaces de la barra de menú */
+  .menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .menu ul li a:hover {
+    color: #ccc;
+  }
